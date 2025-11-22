@@ -26,26 +26,29 @@
 	•	По возрастанию:
 элементы должны располагаться от меньшего к большему.
 Условие обмена:
+```
 if a[j-1] > a[j]: swap
+```
 	•	По убыванию:
 элементы должны идти от большего к меньшему.
 Условие обмена:
+```
 if a[j-1] < a[j]: swap
-
+```
 ⸻
 
 🔹 Где считаются сравнения и перемещения
 	•	Сравнение — это любая проверка вида:
-
+```
 cmp += 1
 if a[j] < a[min_i]:
-
+```
 
 	•	Перемещение / обмен — операция переноса значения:
-
+```
 moves += 1
 a[j], a[j-1] = a[j-1], a[j]
-
+```
 
 
 ⸻
@@ -104,87 +107,87 @@ Selection sort	минимальный элемент ставится в поз�
 ## Тест n = 1000
 
 Bubble sort
-
+```
 sorted      time=0.00006s  cmp=999      moves=0
 reversed    time=0.04089s  cmp=499500   moves=499500
 random      time=0.02999s  cmp=498905   moves=253733
-
+```
 Shaker sort
-
+```
 sorted      time=0.01729s  cmp=499500   moves=0
 reversed    time=0.03671s  cmp=499500   moves=499500
 random      time=0.02996s  cmp=499500   moves=253733
-
+```
 Insertion sort
-
+```
 sorted      time=0.00010s  cmp=999      moves=1998
 reversed    time=0.02794s  cmp=499500   moves=501498
 random      time=0.01472s  cmp=254727   moves=255731
-
+```
 Selection sort
-
+```
 sorted      time=0.01362s  cmp=499500   moves=0
 reversed    time=0.01411s  cmp=499500   moves=500
 random      time=0.01428s  cmp=499500   moves=991
-
+```
 
 ⸻
 
 ## Тест n = 5000
 
 Bubble sort
-
+```
 sorted      time=0.00019s  cmp=4999     moves=0
 reversed    time=0.97911s  cmp=12497500 moves=12497500
 random      time=0.78481s  cmp=12495847 moves=6321423
-
+```
 Shaker sort
-
+```
 sorted      time=0.43183s  cmp=12497500 moves=0
 reversed    time=0.96300s  cmp=12497500 moves=12497500
 random      time=0.75184s  cmp=12497500 moves=6321423
-
+```
 Insertion sort
-
+```
 sorted      time=0.00047s  cmp=4999     moves=9998
 reversed    time=0.76933s  cmp=12497500 moves=12507498
 random      time=0.39209s  cmp=6326412  moves=6331421
-
+```
 Selection sort
-
+```
 sorted      time=0.33256s  cmp=12497500 moves=0
 reversed    time=0.35205s  cmp=12497500 moves=2500
 random      time=0.35113s  cmp=12497500 moves=4989
-
+```
 
 ⸻
 
 ## Тест n = 10000
 
 Bubble sort
-
+```
 sorted      time=0.00037s  cmp=9999      moves=0
 reversed    time=3.89428s  cmp=49995000  moves=49995000
 random      time=3.27241s  cmp=49990149  moves=25124016
-
+```
 Shaker sort
-
+```
 sorted      time=1.83307s  cmp=49995000  moves=0
 reversed    time=3.77696s  cmp=49995000  moves=49995000
 random      time=3.05977s  cmp=49995000  moves=25124016
-
+```
 Insertion sort
-
+```
 sorted      time=0.00091s  cmp=9999      moves=19998
 reversed    time=3.12879s  cmp=49995000  moves=50014998
 random      time=1.59646s  cmp=25134006  moves=25144014
-
+```
 Selection sort
-
+```
 sorted      time=1.38736s  cmp=49995000  moves=0
 reversed    time=1.42917s  cmp=49995000  moves=5000
 random      time=1.38923s  cmp=49995000  moves=9994
-
+```
 
 ⸻
 
